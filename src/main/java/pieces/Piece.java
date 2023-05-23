@@ -6,11 +6,11 @@ import java.util.List;
 
 public abstract class Piece {
     protected Square currentPosition;
-    protected Color color;
+    protected PieceColor color;
 
 
 
-    public Piece(Square position, Color color) {
+    public Piece(Square position, PieceColor color) {
         setColor(color);
         setPosition(position, this);
 
@@ -22,9 +22,9 @@ public abstract class Piece {
 
     public abstract List<Square> getDiagonalMoves();
 
-    public abstract void setColor(Color color);
+    public abstract void setColor(PieceColor color);
 
-    public abstract Color getColor();
+    public abstract PieceColor getColor();
 
     public abstract List<Square> getHorizontalMoves();
 

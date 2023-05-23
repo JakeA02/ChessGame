@@ -7,7 +7,7 @@ import java.util.*;
 
 public class King extends Piece {
 
-    public King(Square position, Color color) {
+    public King(Square position, PieceColor color) {
         super(position, color);
     }
 
@@ -51,12 +51,12 @@ public class King extends Piece {
     }
 
     @Override
-    public void setColor(Color color) {
+    public void setColor(PieceColor color) {
         this.color = color;
     }
 
     @Override
-    public Color getColor() {
+    public PieceColor getColor() {
         return this.color;
     }
 

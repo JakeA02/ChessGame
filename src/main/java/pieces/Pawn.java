@@ -9,9 +9,9 @@ import java.util.Map;
 
 public class Pawn extends Piece {
 
-    private Color color;
+    private PieceColor color;
 
-    public Pawn(Square position, Color color) {
+    public Pawn(Square position, PieceColor color) {
         super(position, color);
     }
 
@@ -39,7 +39,7 @@ public class Pawn extends Piece {
 
         char rightKey = (char) (currentPosition.getKey() - 1);
         char leftKey = (char) (currentPosition.getKey() + 1);
-        int yOffset = (this.color == Color.BLACK) ? -1 : 1;
+        int yOffset = (this.color == PieceColor.BLACK) ? -1 : 1;
 
         Square rightDiagonal = new Square(Map.entry(rightKey, currentPosition.getValue() + yOffset));
         Square leftDiagonal = new Square(Map.entry(leftKey, currentPosition.getValue() + yOffset));
@@ -61,7 +61,7 @@ public class Pawn extends Piece {
     }
 
     @Override
-    public void setColor(Color color) {
+    public void setColor(PieceColor color) {
         this.color = color;
     }
     @Override
@@ -75,25 +75,37 @@ public class Pawn extends Piece {
 
         List < Square > moves = new ArrayList < > ();
 
-        EnumSet < WhiteStartingPawnPositions > startingPawnPositions;
+        EnumSet < WhiteStartingPawnPositions > whiteStartingPawnPositions;
+        EnumSet < BlackStartingPawnPositions > blackStartingPawnPositions;
 
-        startingPawnPositions = EnumSet.allOf(WhiteStartingPawnPositions.class);
+        whiteStartingPawnPositions = EnumSet.allOf(WhiteStartingPawnPositions.class);
+        blackStartingPawnPositions = EnumSet.allOf(BlackStartingPawnPositions.class);
 
-        for (Enum < ? > enumValue : startingPawnPositions) {
-            if (position.equalsIgnoreCase(enumValue.name())) {
-                startingPosition = true;
-                break;
+        if(this.color.equals(PieceColor.WHITE)) {
+            for (Enum<?> enumValue : whiteStartingPawnPositions) {
+                if (position.equalsIgnoreCase(enumValue.name())) {
+                    startingPosition = true;
+                    break;
+                }
+            }
+        } else{
+
+            for (Enum<?> enumValue : blackStartingPawnPositions) {
+                if (position.equalsIgnoreCase(enumValue.name())) {
+                    startingPosition = true;
+                    break;
+                }
             }
         }
 
         if (startingPosition && canDoubleJump()) {
             moves.add(new Square(Map.entry(currentPosition.getPosition().getKey(),
-                    currentPosition.getPosition().getValue() + (color.equals(Color.WHITE) ? 1 : -1))));
+                    currentPosition.getPosition().getValue() + (color.equals(PieceColor.WHITE) ? 1 : -1))));
             moves.add(new Square(Map.entry(currentPosition.getPosition().getKey(),
-                    currentPosition.getPosition().getValue() + (color.equals(Color.WHITE) ? 2 : -2))));
+                    currentPosition.getPosition().getValue() + (color.equals(PieceColor.WHITE) ? 2 : -2))));
         } else {
             if (canSingleJump()) {
-                moves.add(new Square(Map.entry(currentPosition.getPosition().getKey(), currentPosition.getPosition().getValue() + (color.equals(Color.WHITE) ? 1 : -1))));
+                moves.add(new Square(Map.entry(currentPosition.getPosition().getKey(), currentPosition.getPosition().getValue() + (color.equals(PieceColor.WHITE) ? 1 : -1))));
             }
         }
 
@@ -103,7 +115,7 @@ public class Pawn extends Piece {
     public boolean canDoubleJump() {
         Square twoJumpPosition;
 
-        if (color.equals(Color.WHITE)) {
+        if (color.equals(PieceColor.WHITE)) {
             twoJumpPosition = new Square(Map.entry(currentPosition.getPosition().getKey(), currentPosition.getPosition().getValue() + 2));
             return (currentPosition.getPosition().getValue() + 2) < 9 && !OccupiedSquares.isOccupied(twoJumpPosition) && canSingleJump();
 
@@ -116,7 +128,7 @@ public class Pawn extends Piece {
     private boolean canSingleJump() {
         Square oneJumpPosition;
 
-        if (color.equals(Color.WHITE)) {
+        if (color.equals(PieceColor.WHITE)) {
             oneJumpPosition = new Square(Map.entry(currentPosition.getPosition().getKey(), currentPosition.getPosition().getValue() + 1));
             return (currentPosition.getPosition().getValue() + 2) < 9 && !OccupiedSquares.isOccupied(oneJumpPosition);
 
@@ -136,7 +148,7 @@ public class Pawn extends Piece {
     }
 
     @Override
-    public Color getColor() {
+    public PieceColor getColor() {
         return this.color;
     }
 

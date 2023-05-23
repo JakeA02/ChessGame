@@ -2,12 +2,11 @@ package board;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.ListMultimap;
-import pieces.Color;
+import pieces.PieceColor;
 import pieces.Piece;
 
 import java.util.Arrays;
 import java.util.Hashtable;
-import java.util.Map;
 
 public class OccupiedSquares extends Chessboard {
     public static ListMultimap < Character, Integer > occupiedSquares;
@@ -28,7 +27,7 @@ public class OccupiedSquares extends Chessboard {
 
 
     }
-    public static Color getOccupantColor(Square square) {
+    public static PieceColor getOccupantColor(Square square) {
         return pieceOccupation.get(square).getColor();
     }
 

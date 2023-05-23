@@ -10,11 +10,11 @@ public class Main {
         Chessboard chessboard = new Chessboard();
         OccupiedSquares occupiedSquares = new OccupiedSquares();
 
-        Rook myRook = new Rook(chessboard.getSquare(Position.A1), Color.WHITE);
+        Rook myRook = new Rook(chessboard.getSquare(Position.A1), PieceColor.WHITE);
 
-        Queen myQueen = new Queen(chessboard.getSquare(Position.B1), Color.BLACK);
+        Queen myQueen = new Queen(chessboard.getSquare(Position.B1), PieceColor.BLACK);
 
-        Knight myKnight = new Knight(chessboard.getSquare(Position.B3), Color.BLACK);
+        Knight myKnight = new Knight(chessboard.getSquare(Position.B3), PieceColor.BLACK);
 
 
         myRook.outputAvailableMoves();

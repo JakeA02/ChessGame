@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class Bishop extends Piece {
 
-    public Bishop(Square position, Color color) {
+    public Bishop(Square position, PieceColor color) {
         super(position, color);
     }
     @Override
@@ -56,7 +56,7 @@ public class Bishop extends Piece {
         return getAvailableMoves();
     }
     @Override
-    public void setColor(Color color) {
+    public void setColor(PieceColor color) {
         this.color = color;
     }
 
@@ -122,7 +122,7 @@ public class Bishop extends Piece {
 
 
     @Override
-    public Color getColor() {
+    public PieceColor getColor() {
         return this.color;
     }
 

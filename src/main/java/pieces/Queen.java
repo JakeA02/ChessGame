@@ -11,7 +11,7 @@ public class Queen extends Piece{
     private Rook rook;
     private Bishop bishop;
 
-    public Queen (Square position, Color color) {
+    public Queen (Square position, PieceColor color) {
         super(position, color);
 
         rook = new Rook (position, color);
@@ -40,7 +40,7 @@ public class Queen extends Piece{
     }
 
     @Override
-    public void setColor(Color color) {
+    public void setColor(PieceColor color) {
         this.color = color;
     }
 
@@ -65,7 +65,7 @@ public class Queen extends Piece{
 
     }
     @Override
-    public Color getColor() {
+    public PieceColor getColor() {
         return this.color;
     }
 

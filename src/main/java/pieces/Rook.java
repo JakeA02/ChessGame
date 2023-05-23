@@ -1,6 +1,5 @@
 package pieces;
 
-import board.Chessboard;
 import board.OccupiedSquares;
 import board.Square;
 
@@ -10,12 +9,12 @@ import java.util.Map;
 
 public class Rook extends Piece {
 
-    public Rook(Square position, Color color) {
+    public Rook(Square position, PieceColor color) {
         super(position, color);
 
     }
     @Override
-    public Color getColor() {
+    public PieceColor getColor() {
         return this.color;
     }
 
@@ -44,7 +43,7 @@ public class Rook extends Piece {
     }
 
     @Override
-    public void setColor(Color color) {
+    public void setColor(PieceColor color) {
         this.color = color;
     }
 

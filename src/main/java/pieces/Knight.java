@@ -7,8 +7,8 @@ import java.util.*;
 
 public class Knight extends Piece {
 
-    private Color color;
-    public Knight(Square position, Color color) {
+    private PieceColor color;
+    public Knight(Square position, PieceColor color) {
         super(position, color);
 
     }
@@ -45,7 +45,7 @@ public class Knight extends Piece {
     }
 
     @Override
-    public void setColor(Color color) {
+    public void setColor(PieceColor color) {
         this.color = color;
     }
 
@@ -59,7 +59,7 @@ public class Knight extends Piece {
         return null;
     }
     @Override
-    public Color getColor() {
+    public PieceColor getColor() {
         return color;
     }
 
