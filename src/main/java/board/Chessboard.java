@@ -35,5 +35,29 @@ public class Chessboard {
             System.out.println(Arrays.toString(chessboard.get(i).toArray()));
         }
     }
+
+    public Square getSquare(int row, int column){
+        char myColumn;
+
+        switch(column){
+            case 0: myColumn = 'A';
+
+            case 1: myColumn = 'B';
+
+            case 2: myColumn = 'C';
+
+            case 3: myColumn = 'D';
+
+            case 4: myColumn = 'E';
+
+            case 5: myColumn = 'F';
+
+            case 6: myColumn = 'G';
+
+            default: myColumn = 'H';
+        }
+        return new Square(Map.entry(myColumn, row+1));
+
+    }
 }
 

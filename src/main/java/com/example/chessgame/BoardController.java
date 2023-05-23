@@ -28,7 +28,7 @@ public class BoardController {
     private Knight wk1, wk2, bk1, bk2;
     private Bishop wb1, wb2, bb1, bb2;
     private Queen wq, bq;
-    private King wk, bK;
+    private King wk, bk;
 
     private OccupiedSquares occupiedSquares;
 
@@ -142,8 +142,64 @@ public class BoardController {
             GridPane.setRowIndex(piece, row);
             GridPane.setColumnIndex(piece, column);
 
-            if (piece.equals(this.whitePawn1)) {
+            Shape[] whitePawns = {whitePawn1, whitePawn2, whitePawn3, whitePawn4, whitePawn5, whitePawn6, whitePawn7, whitePawn8};
+            Pawn[] whitePawnsArray = {wp1, wp2, wp3, wp4, wp5, wp6, wp7, wp8};
 
+            Shape[] blackPawns = {blackPawn1, blackPawn2, blackPawn3, blackPawn4, blackPawn5, blackPawn6, blackPawn7, blackPawn8};
+            Pawn[] blackPawnsArray = {bp1, bp2, bp3, bp4, bp5, bp6, bp7, bp8};
+
+            Shape[] whiteKnights = {whiteKnight1, whiteKnight2};
+            Knight[] whiteKnightsArray = {wk1, wk2};
+
+            Shape[] blackKnights = {blackKnight1, blackKnight2};
+            Knight[] blackKnightsArray = {bk1, bk2};
+
+            Shape[] whiteBishops = {whiteBishop1, whiteBishop2};
+            Bishop[] whiteBishopsArray = {wb1, wb2};
+
+            Shape[] blackBishops = {blackBishop1, blackBishop2};
+            Bishop[] blackBishopsArray = {bb1, bb2};
+
+            Shape[] whiteRooks = {whiteRook1, whiteRook2};
+            Rook[] whiteRooksArray = {wr1, wr2};
+
+            Shape[] blackRooks = {blackRook1, blackRook2};
+            Rook[] blackRooksArray = {br1, br2};
+
+            for (int i = 0; i < whitePawns.length; i++) {
+                if (piece.equals(whitePawns[i])) {
+                    whitePawnsArray[i].setPosition(chessboard.getSquare(row, column), whitePawnsArray[i]);
+                    break;
+                } else if (piece.equals(blackPawns[i])) {
+                    blackPawnsArray[i].setPosition(chessboard.getSquare(row, column), blackPawnsArray[i]);
+                    break;
+                } else if (piece.equals(whiteKnights[i])) {
+                    whiteKnightsArray[i].setPosition(chessboard.getSquare(row, column), whiteKnightsArray[i]);
+                    break;
+                } else if (piece.equals(blackKnights[i])) {
+                    blackKnightsArray[i].setPosition(chessboard.getSquare(row, column), blackKnightsArray[i]);
+                    break;
+                } else if (piece.equals(whiteBishops[i])) {
+                    whiteBishopsArray[i].setPosition(chessboard.getSquare(row, column), whiteBishopsArray[i]);
+                    break;
+                } else if (piece.equals(blackBishops[i])) {
+                    blackBishopsArray[i].setPosition(chessboard.getSquare(row, column), blackBishopsArray[i]);
+                    break;
+                } else if (piece.equals(whiteRooks[i])) {
+                    whiteRooksArray[i].setPosition(chessboard.getSquare(row, column), whiteRooksArray[i]);
+                    break;
+                } else if (piece.equals(blackRooks[i])) {
+                    blackRooksArray[i].setPosition(chessboard.getSquare(row, column), blackRooksArray[i]);
+                    break;
+                } else if (piece.equals(whiteQueen)) {
+                    wq.setPosition(chessboard.getSquare(row, column), wq);
+                } else if (piece.equals(blackQueen)) {
+                    bq.setPosition(chessboard.getSquare(row, column), bq);
+                } else if (piece.equals(whiteKing)) {
+                    wk.setPosition(chessboard.getSquare(row, column), wk);
+                } else if (piece.equals(blackKing)) {
+                    bk.setPosition(chessboard.getSquare(row, column), bk);
+                }
             }
         }
 
