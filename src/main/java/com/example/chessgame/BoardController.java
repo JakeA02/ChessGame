@@ -3,6 +3,7 @@ package com.example.chessgame;
 import board.Chessboard;
 import board.OccupiedSquares;
 import board.Position;
+import board.Square;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.effect.BlurType;
@@ -11,6 +12,9 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Shape;
 import javafx.scene.input.*;
 import pieces.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class BoardController {
@@ -29,6 +33,8 @@ public class BoardController {
     private Bishop wb1, wb2, bb1, bb2;
     private Queen wq, bq;
     private King wk, bk;
+
+
 
     private OccupiedSquares occupiedSquares;
 
@@ -213,9 +219,98 @@ public class BoardController {
             }
         }
 
-        private Integer[][] getAvailableMoves(Shape piece){
+        private List<Square> getAvailableMoves(Shape piece) {
+
+            Shape[] whitePawns = {whitePawn1, whitePawn2, whitePawn3, whitePawn4, whitePawn5, whitePawn6, whitePawn7, whitePawn8};
+            Pawn[] whitePawnsArray = {wp1, wp2, wp3, wp4, wp5, wp6, wp7, wp8};
+
+            Shape[] blackPawns = {blackPawn1, blackPawn2, blackPawn3, blackPawn4, blackPawn5, blackPawn6, blackPawn7, blackPawn8};
+            Pawn[] blackPawnsArray = {bp1, bp2, bp3, bp4, bp5, bp6, bp7, bp8};
+
+            Shape[] whiteKnights = {whiteKnight1, whiteKnight2};
+            Knight[] whiteKnightsArray = {wk1, wk2};
+
+            Shape[] blackKnights = {blackKnight1, blackKnight2};
+            Knight[] blackKnightsArray = {bk1, bk2};
+
+            Shape[] whiteBishops = {whiteBishop1, whiteBishop2};
+            Bishop[] whiteBishopsArray = {wb1, wb2};
+
+            Shape[] blackBishops = {blackBishop1, blackBishop2};
+            Bishop[] blackBishopsArray = {bb1, bb2};
+
+            Shape[] whiteRooks = {whiteRook1, whiteRook2};
+            Rook[] whiteRooksArray = {wr1, wr2};
+
+            Shape[] blackRooks = {blackRook1, blackRook2};
+            Rook[] blackRooksArray = {br1, br2};
+
+
+            for (int i = 0; i < whitePawns.length; i++) {
+                if (piece.equals(whitePawns[i])) {
+                    return whitePawnsArray[i].getAvailableMoves();
+                } else if (piece.equals(blackPawns[i])) {
+                    return blackPawnsArray[i].getAvailableMoves();
+                } else if (piece.equals(whiteKnights[i])) {
+                    return whiteKnightsArray[i].getAvailableMoves();
+                } else if (piece.equals(blackKnights[i])) {
+                    return blackKnightsArray[i].getAvailableMoves();
+                } else if (piece.equals(whiteBishops[i])) {
+                    return whiteBishopsArray[i].getAvailableMoves();
+                } else if (piece.equals(blackBishops[i])) {
+                    return blackBishopsArray[i].getAvailableMoves();
+                } else if (piece.equals(whiteRooks[i])) {
+                    return whiteRooksArray[i].getAvailableMoves();
+                } else if (piece.equals(blackRooks[i])) {
+                    return blackRooksArray[i].getAvailableMoves();
+                } else if (piece.equals(whiteQueen)) {
+                    return wq.getAvailableMoves();
+                } else if (piece.equals(blackQueen)) {
+                    return bq.getAvailableMoves();
+                } else if (piece.equals(whiteKing)) {
+                    return wk.getAvailableMoves();
+                } else if (piece.equals(blackKing)) {
+                    return bk.getAvailableMoves();
+                }
+            }
             return null;
         }
+
+        public List<String> getListOfGridMoves(List <Square> list){
+        List<String> coordinates = new ArrayList<>();
+            for (Square square: list) {
+                int row = letterToInt(square.getKey());
+                int column = square.getValue() - 1;
+
+                String coordinate = "(" + row + ", " + column + ")";
+                coordinates.add(coordinate);
+            }
+
+            return coordinates;
+        }
+
+        public Integer letterToInt(Character character){
+            character = Character.toUpperCase(character);
+            switch (character){
+                case 'A':
+                    return 0;
+                case 'B':
+                    return 1;
+                case 'C':
+                    return 2;
+                case 'D':
+                    return 3;
+                case 'E':
+                    return 4;
+                case 'F':
+                    return 5;
+                case 'G':
+                    return 6;
+                default:
+                    return 7;
+            }
+        }
+
     @FXML
     private void handlePieceDragDetected(MouseEvent event) {
         // Get the source of the event, which is the piece being dragged
