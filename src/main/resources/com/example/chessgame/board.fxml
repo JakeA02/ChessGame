@@ -3,16 +3,16 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
-<GridPane gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: Grey; -fx-border-color: Black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: Grey; -fx-border-color: Black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chessgame.BoardController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-    <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
-    <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
-    <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
-    <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
   </columnConstraints>
   <rowConstraints>
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -26,45 +26,41 @@
   </rowConstraints>
   <children>
 
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fill="BLACK" radius="30.0" stroke="BLACK" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn2" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDone="#handlePieceDragDone" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn3" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn4" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn5" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn6" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn7" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn8" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn1" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackRook1" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackBishop1" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackKing" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackQueen" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackBishop2" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackKnight2" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackRook2" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackKnight1" fill="BLACK" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="BLACK" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
 
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn1" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn2" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn3" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn4" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn5" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn6" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn7" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn8" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
 
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fill="WHITE" radius="30.0" stroke="WHITE" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-
-
-
-
+    <Circle fx:id="whiteRook1" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteKnight1" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteBishop1" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteKing" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteQueen" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteBishop2" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteKnight2" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteRook2" fill="WHITE" onDragDetected="#handlePieceDragDetected" onDragDropped="#handlePieceDragDropped" onDragOver="#handlePieceDragOver" radius="30.0" stroke="WHITE" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
 
   </children>
 </GridPane>
