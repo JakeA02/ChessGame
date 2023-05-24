@@ -4,7 +4,9 @@ import board.*;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
+import javafx.scene.image.Image;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Shape;
 import javafx.scene.input.*;
@@ -89,9 +91,11 @@ public class BoardController {
     Rook[] blackRooksArray = new Rook[2];
 
     private Shape currentlySelectedShape;
-
-
     private Chessboard chessboard;
+
+    private boolean whitesTurn;
+
+
 
 
     @FXML
@@ -99,6 +103,8 @@ public class BoardController {
         // Perform initialization tasks here
         createChessBoard();
         createArrays();
+        addImages();
+        whitesTurn = true;
     }
 
     private void createArrays() {
@@ -136,6 +142,54 @@ public class BoardController {
         whiteRooksArray = new Rook[]{wr1, wr2};
 
         blackRooksArray = new Rook[]{br1, br2};
+
+    }
+
+    private void addImages(){
+        Image blackPawnImage = new Image("C:\\Users\\jakea\\IdeaProjects\\Chess-Game\\src\\main\\resources\\com\\example\\chessgame\\blackPawnImage.png");
+        Image whitePawnImage = new Image("C:\\Users\\jakea\\IdeaProjects\\Chess-Game\\src\\main\\resources\\com\\example\\chessgame\\whitePawnImage.png");
+        Image whiteKnightImage = new Image("C:\\Users\\jakea\\IdeaProjects\\Chess-Game\\src\\main\\resources\\com\\example\\chessgame\\whiteKnightImage.png");
+        Image blackKnightImage = new Image("C:\\Users\\jakea\\IdeaProjects\\Chess-Game\\src\\main\\resources\\com\\example\\chessgame\\blackKnightImage.png");
+        Image whiteBishopImage = new Image("C:\\Users\\jakea\\IdeaProjects\\Chess-Game\\src\\main\\resources\\com\\example\\chessgame\\whiteBishopImage.png");
+        Image blackBishopImage = new Image("C:\\Users\\jakea\\IdeaProjects\\Chess-Game\\src\\main\\resources\\com\\example\\chessgame\\blackBishopImage.png");
+        Image blackRookImage = new Image("C:\\Users\\jakea\\IdeaProjects\\Chess-Game\\src\\main\\resources\\com\\example\\chessgame\\blackRookImage.png");
+        Image whiteRookImage = new Image("C:\\Users\\jakea\\IdeaProjects\\Chess-Game\\src\\main\\resources\\com\\example\\chessgame\\whiteRookImage.png");
+
+        Image whiteQueenImage = new Image("C:\\Users\\jakea\\IdeaProjects\\Chess-Game\\src\\main\\resources\\com\\example\\chessgame\\whiteQueenImage.png");
+        Image blackQueenImage = new Image("C:\\Users\\jakea\\IdeaProjects\\Chess-Game\\src\\main\\resources\\com\\example\\chessgame\\blackQueenImage.png");
+        Image blackKingImage = new Image("C:\\Users\\jakea\\IdeaProjects\\Chess-Game\\src\\main\\resources\\com\\example\\chessgame\\blackKingImage.png");
+        Image whiteKingImage = new Image("C:\\Users\\jakea\\IdeaProjects\\Chess-Game\\src\\main\\resources\\com\\example\\chessgame\\whiteKingImage.png");
+
+
+        for (Shape pawn: whitePawns ) {
+            pawn.setFill(new ImagePattern(whitePawnImage));
+        }
+        for (Shape pawn: blackPawns ) {
+            pawn.setFill(new ImagePattern(blackPawnImage));
+        }
+        for (Shape knight: whiteKnights) {
+            knight.setFill(new ImagePattern(whiteKnightImage));
+        }
+        for (Shape knight: blackKnights) {
+            knight.setFill(new ImagePattern(blackKnightImage));
+        }
+        for(Shape bishop: whiteBishops) {
+            bishop.setFill(new ImagePattern(whiteBishopImage));
+        }
+
+        for(Shape bishop: blackBishops){
+            bishop.setFill(new ImagePattern(blackBishopImage));
+        }
+        for(Shape rook: whiteRooks) {
+            rook.setFill(new ImagePattern(whiteRookImage));
+        }
+        for(Shape rook: blackRooks) {
+            rook.setFill(new ImagePattern(blackRookImage));
+        }
+        whiteQueen.setFill(new ImagePattern(whiteQueenImage));
+        blackQueen.setFill(new ImagePattern(blackQueenImage));
+        whiteKing.setFill(new ImagePattern(whiteKingImage));
+        blackKing.setFill(new ImagePattern(blackKingImage));
 
     }
 
@@ -324,56 +378,69 @@ public class BoardController {
 
     private List<Square> getAvailableMoves(Shape piece) {
 
-        for (int i = 0; i < whitePawns.length; i++) {
-            if (piece.equals(whitePawns[i])) {
-                return whitePawnsArray[i].getAvailableMoves();
+        List<Square> blankMoves = new ArrayList<>();
+        if(whitesTurn) {
+            for (int i = 0; i < whitePawns.length; i++) {
+                if (piece.equals(whitePawns[i])) {
+                    return whitePawnsArray[i].getAvailableMoves();
+                }
             }
-        }
-        for (int i = 0; i < blackPawns.length; i++) {
-            if (piece.equals(blackPawns[i])) {
-                return blackPawnsArray[i].getAvailableMoves();
+            for (int i = 0; i < whiteKnights.length; i++) {
+                if (piece.equals(whiteKnights[i])) {
+                    return whiteKnightsArray[i].getAvailableMoves();
+                }
             }
-        }
-        for (int i = 0; i < whiteKnights.length; i++) {
-            if (piece.equals(whiteKnights[i])) {
-                return whiteKnightsArray[i].getAvailableMoves();
+
+            for (int i = 0; i < whiteBishops.length; i++) {
+                if (piece.equals(whiteBishops[i])) {
+                    return whiteBishopsArray[i].getAvailableMoves();
+                }
             }
-        }
-        for (int i = 0; i < blackKnights.length; i++) {
-            if (piece.equals(blackKnights[i])) {
-                return blackKnightsArray[i].getAvailableMoves();
+            for (int i = 0; i < whiteRooks.length; i++) {
+                if (piece.equals(whiteRooks[i])) {
+                    return whiteRooksArray[i].getAvailableMoves();
+                }
             }
-        }
-        for (int i = 0; i < whiteBishops.length; i++) {
-            if (piece.equals(whiteBishops[i])) {
-                return whiteBishopsArray[i].getAvailableMoves();
-            }
-        }
-        for (int i = 0; i < blackBishops.length; i++) {
-            if (piece.equals(blackBishops[i])) {
-                return blackBishopsArray[i].getAvailableMoves();
-            }
-        }
-        for (int i = 0; i < whiteRooks.length; i++) {
-            if (piece.equals(whiteRooks[i])) {
-                return whiteRooksArray[i].getAvailableMoves();
-            }
-        }
-        for (int i = 0; i < blackRooks.length; i++) {
-            if (piece.equals(blackRooks[i])) {
-                return blackRooksArray[i].getAvailableMoves();
-            }
-        }
             if (piece.equals(whiteQueen)) {
                 return wq.getAvailableMoves();
-            } else if (piece.equals(blackQueen)) {
-                return bq.getAvailableMoves();
             } else if (piece.equals(whiteKing)) {
                 return wk.getAvailableMoves();
             }
-            else {
+        }
+        else {
+            for (int i = 0; i < blackPawns.length; i++) {
+                if (piece.equals(blackPawns[i])) {
+                    return blackPawnsArray[i].getAvailableMoves();
+                }
+            }
+
+            for (int i = 0; i < blackKnights.length; i++) {
+                if (piece.equals(blackKnights[i])) {
+                    return blackKnightsArray[i].getAvailableMoves();
+                }
+            }
+
+            for (int i = 0; i < blackBishops.length; i++) {
+                if (piece.equals(blackBishops[i])) {
+                    return blackBishopsArray[i].getAvailableMoves();
+                }
+            }
+
+            for (int i = 0; i < blackRooks.length; i++) {
+                if (piece.equals(blackRooks[i])) {
+                    return blackRooksArray[i].getAvailableMoves();
+                }
+            }
+
+            if (piece.equals(blackQueen)) {
+                return bq.getAvailableMoves();
+            } else if (piece.equals(blackKing)) {
                 return bk.getAvailableMoves();
             }
+        }
+
+        return blankMoves; //necessary in case player clicks on piece when it is not their turn
+
     }
 
     public ArrayList<Tuple> getListOfGridMoves(List<Square> list) {
@@ -447,6 +514,7 @@ public class BoardController {
     }
     @FXML
     private void handleShapeClick(MouseEvent event){
+
         showMoves(getListOfGridMoves(getAvailableMoves((Shape) event.getSource())));
         currentlySelectedShape = (Shape) event.getSource();
     }
@@ -462,6 +530,7 @@ public class BoardController {
 
         setPieceLocation(7- row, column, currentlySelectedShape);
         clearIndicators();
+        whitesTurn = !whitesTurn; //flips turn
     }
 
     private void checkIfCapture(int row, int column, Node indicator) {
