@@ -38,23 +38,33 @@ public class Chessboard {
 
     public Square getSquare(int row, int column){
         char myColumn;
-
+        row = 7 - row; //again, accounts for the inconsistency between the grid pane and the original logic code
         switch(column){
-            case 0: myColumn = 'A';
 
-            case 1: myColumn = 'B';
+            case 0:
+                myColumn = 'a';
+                break;
 
-            case 2: myColumn = 'C';
+            case 1:
+                myColumn = 'b';
+                break;
 
-            case 3: myColumn = 'D';
+            case 2: myColumn = 'c';
+            break;
 
-            case 4: myColumn = 'E';
+            case 3: myColumn = 'd';
+                break;
 
-            case 5: myColumn = 'F';
+            case 4: myColumn = 'e';
+                break;
 
-            case 6: myColumn = 'G';
+            case 5: myColumn = 'f';
+                break;
 
-            default: myColumn = 'H';
+            case 6: myColumn = 'g';
+                break;
+
+            default: myColumn = 'h';
         }
         return new Square(Map.entry(myColumn, row+1));
 

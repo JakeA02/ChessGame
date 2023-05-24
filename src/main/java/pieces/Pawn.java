@@ -46,7 +46,6 @@ public class Pawn extends Piece {
 
         if (OccupiedSquares.isOccupied(rightDiagonal)) {
             if(!OccupiedSquares.getOccupantColor(rightDiagonal).equals(this.color)) {
-
                 moves.add(rightDiagonal);
             }
         }

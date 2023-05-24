@@ -93,7 +93,7 @@ public class King extends Piece {
             moves.add(upOne);
         }
         if (isValidMove(downOne)) {
-            moves.add(upOne);
+            moves.add(downOne);
         }
 
         return moves;

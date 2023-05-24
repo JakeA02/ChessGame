@@ -68,6 +68,7 @@ public class Knight extends Piece {
         if (currentPosition != null) {
             OccupiedSquares.removeOccupiedSquare(currentPosition);
         }
+
         this.currentPosition = position;
         OccupiedSquares.addOccupiedSquare(position, piece);
     }
@@ -81,6 +82,7 @@ public class Knight extends Piece {
         int keyAsInt = currentPosition.getPosition().getKey();
         char newKey = (char)(keyAsInt + keyOffset);
         int newValue = currentPosition.getValue() + valueOffset;
+
 
         Square move = new Square(Map.entry(newKey, newValue));
 

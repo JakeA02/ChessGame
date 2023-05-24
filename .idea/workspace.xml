@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c90e5101-21f2-458e-addd-8b669df0812b" name="Changes" comment="Building controller part 3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/board/Tuple.java" afterDir="false" />
+    <list default="true" id="c90e5101-21f2-458e-addd-8b669df0812b" name="Changes" comment="Working indicators. Now to add movement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/board/BlackStartingPawnPositions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/BlackStartingPawnPositions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/board/OccupiedSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/OccupiedSquares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/board/Chessboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/board/Chessboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/chessgame/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/chessgame/BoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/chessgame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/chessgame/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pieces/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pieces/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/PieceColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/King.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pieces/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Knight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pieces/Rook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/chessgame/board.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/chessgame/board.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,6 +131,7 @@
       <workItem from="1684543805336" duration="195000" />
       <workItem from="1684544131564" duration="20812000" />
       <workItem from="1684872202791" duration="2805000" />
+      <workItem from="1684877024860" duration="12204000" />
     </task>
     <task id="LOCAL-00001" summary="Beginning">
       <created>1684505338799</created>
@@ -168,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684807868296</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Working indicators. Now to add movement">
+      <created>1684877086604</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684877086604</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +179,7 @@
     <MESSAGE value="Building controller" />
     <MESSAGE value="Building controller part 2" />
     <MESSAGE value="Building controller part 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Building controller part 3" />
+    <MESSAGE value="Working indicators. Now to add movement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working indicators. Now to add movement" />
   </component>
 </project>
