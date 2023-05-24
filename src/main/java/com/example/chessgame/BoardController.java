@@ -2,6 +2,7 @@ package com.example.chessgame;
 
 import board.*;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Circle;
@@ -12,6 +13,7 @@ import pieces.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 
 public class BoardController {
@@ -96,7 +98,6 @@ public class BoardController {
     private void initialize() {
         // Perform initialization tasks here
         createChessBoard();
-        initializeChessPieces();
         createArrays();
     }
 
@@ -219,52 +220,6 @@ public class BoardController {
         i8.setVisible(visibility);
     }
 
-    private void initializeChessPieces() {
-        // Initialize the chess pieces and their initial positions
-        chessPieces = new Shape[8][8];
-        // Store the references to the pieces in the chessPieces array
-        chessPieces[7][0] = whiteRook1;
-        chessPieces[7][1] = whiteKnight1;
-        chessPieces[7][2] = whiteBishop1;
-
-        chessPieces[7][3] = whiteKing;
-        chessPieces[7][4] = whiteQueen;
-
-        chessPieces[7][5] = whiteBishop2;
-        chessPieces[7][6] = whiteKnight2;
-        chessPieces[7][7] = whiteRook2;
-
-        chessPieces[6][0] = whitePawn1;
-        chessPieces[6][1] = whitePawn2;
-        chessPieces[6][2] = whitePawn3;
-        chessPieces[6][3] = whitePawn4;
-        chessPieces[6][4] = whitePawn5;
-        chessPieces[6][5] = whitePawn6;
-        chessPieces[6][6] = whitePawn7;
-        chessPieces[6][7] = whitePawn8;
-
-        chessPieces[0][0] = blackRook1;
-        chessPieces[0][1] = blackKnight1;
-        chessPieces[0][2] = blackBishop1;
-
-        chessPieces[0][3] = blackKing;
-        chessPieces[0][4] = blackQueen;
-
-        chessPieces[0][5] = blackBishop2;
-        chessPieces[0][6] = blackKnight2;
-        chessPieces[0][7] = blackRook2;
-
-        chessPieces[1][0] = blackPawn1;
-        chessPieces[1][1] = blackPawn2;
-        chessPieces[1][2] = blackPawn3;
-        chessPieces[1][3] = blackPawn4;
-        chessPieces[1][4] = blackPawn5;
-        chessPieces[1][5] = blackPawn6;
-        chessPieces[1][6] = blackPawn7;
-        chessPieces[1][7] = blackPawn8;
-
-    }
-
     private void setPieceLocation(int row, int column, Shape piece) {
         boolean found = false;
 
@@ -332,6 +287,8 @@ public class BoardController {
             }
             if (piece.equals(whiteQueen)) {
                 wq.setPosition(chessboard.getSquare(row, column), wq);
+
+                wq.outputAvailableMoves();
                 move(whiteQueen, row, column);
                 found = true;
             } else if (piece.equals(blackQueen)) {
@@ -415,13 +372,14 @@ public class BoardController {
                 return wk.getAvailableMoves();
             }
             else {
-                bk.outputAvailableMoves();
                 return bk.getAvailableMoves();
             }
     }
 
     public ArrayList<Tuple> getListOfGridMoves(List<Square> list) {
+
         ArrayList<Tuple> coordinates = new ArrayList<>();
+
         for (Square square : list) {
             int row = letterToInt(square.getKey());
             int column = square.getValue() - 1;
@@ -429,6 +387,7 @@ public class BoardController {
             Tuple coordinate = new Tuple(row, column);
             coordinates.add(coordinate);
         }
+
 
         return coordinates;
     }
@@ -455,8 +414,6 @@ public class BoardController {
             }
             else if(coordinate.getRow() == 5){
                 indicatorsRow6[coordinate.getColumn()].setVisible(true);
-
-
             }
             else if(coordinate.getRow() == 6){
                 indicatorsRow7[coordinate.getColumn()].setVisible(true);
@@ -495,6 +452,7 @@ public class BoardController {
     }
     @FXML
     private void handleIndicatorClick(MouseEvent event){
+
         Node eventNode = (Node) event.getSource();
         int row = GridPane.getRowIndex(eventNode);
         int column = GridPane.getColumnIndex(eventNode);
@@ -508,16 +466,28 @@ public class BoardController {
 
     private void checkIfCapture(int row, int column, Node indicator) {
 
+
+
         for (Node child: chessBoardGrid.getChildren()) {
+
             if (GridPane.getRowIndex(child) != null && GridPane.getColumnIndex(child) != null && child != null) {
                 int rowOfChild = GridPane.getRowIndex(child);
                 int columnOfChild = GridPane.getColumnIndex(child);
 
-                if (rowOfChild == row && columnOfChild == column && child != indicator) {
+                if (rowOfChild == row && columnOfChild == column && child != indicator && !child.isDisabled() ) {
                     chessBoardGrid.getChildren().remove(child);
+                    OccupiedSquares.removeOccupiedSquare(chessboard.getSquare(row, column));
+                    if(child.equals(whiteKing) || child.equals(blackKing)){
+                        checkmate();
+                    }
                     break;
                 }
             }
         }
+    }
+
+    private void checkmate() {
+
+
     }
 }

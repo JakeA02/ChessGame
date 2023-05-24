@@ -61,6 +61,10 @@ public class Queen extends Piece{
             OccupiedSquares.removeOccupiedSquare(currentPosition);
         }
         this.currentPosition = position;
+        if(bishop != null && rook != null) {
+            bishop.setPosition(currentPosition, bishop);
+            rook.setPosition(currentPosition, rook);
+        }
         OccupiedSquares.addOccupiedSquare(position, piece);
 
     }

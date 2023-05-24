@@ -26,112 +26,187 @@
   </rowConstraints>
   <children>
 
-    <Circle fx:id="blackPawn2" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackPawn3" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackPawn4" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackPawn5" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackPawn6" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackPawn7" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackPawn8" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackPawn1" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackRook1" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackBishop1" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackKing" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackQueen" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackBishop2" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackKnight2" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackRook2" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="blackKnight1" fill="BLACK" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" stroke="BLACK" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn2" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn3" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn4" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn5" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn6" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn7" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn8" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackPawn1" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackRook1" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackBishop1" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackKing" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackQueen" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackBishop2" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackKnight2" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackRook2" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="blackKnight1" fill="BLACK" onMouseClicked="#handleShapeClick" radius="30.0" stroke="GREY" viewOrder="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
 
-    <Circle fx:id="whitePawn1" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="whitePawn2" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="whitePawn3" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="whitePawn4" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="whitePawn5" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="whitePawn6" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="whitePawn7" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="whitePawn8" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn1" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn2" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn3" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn4" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn5" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn6" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn7" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="whitePawn8" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
 
-    <Circle fx:id="whiteRook1" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="whiteKnight1" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="whiteBishop1" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="whiteKing" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="whiteQueen" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="whiteBishop2" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="whiteKnight2" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1"  radius="30.0" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="whiteRook2" fill="WHITE" onMouseClicked="#handleShapeClick" viewOrder="1" radius="30.0" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteRook1" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteKnight1" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteBishop1" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteKing" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteQueen" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteBishop2" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteKnight2" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="whiteRook2" fill="PEACHPUFF" stroke="PERU" onMouseClicked="#handleShapeClick" radius="30.0" viewOrder="1" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
 
-    <Circle fx:id="indicatorA1" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorB1" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorC1" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorD1" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorE1" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorF1" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorG1" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorH1" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorA1" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorB1" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorC1" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorD1" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorE1" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorF1" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorG1" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorH1" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
 
-    <Circle fx:id="indicatorA2" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorB2" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorC2" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorD2" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorE2" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorF2" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorG2" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorH2" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorA2" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorB2" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorC2" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorD2" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorE2" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorF2" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorG2" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorH2" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
 
-    <Circle fx:id="indicatorA3" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorB3" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorC3" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorD3" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorE3" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorF3" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorG3" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorH3" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorA3" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorB3" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorC3" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorD3" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorE3" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorF3" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorG3" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorH3" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
 
-    <Circle fx:id="indicatorA4" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorB4" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorC4" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorD4" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorE4" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorF4" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorG4" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorH4" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorA4" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorB4" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorC4" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorD4" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorE4" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorF4" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorG4" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorH4" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
 
-    <Circle fx:id="indicatorA5" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorB5" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorC5" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorD5" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorE5" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorF5" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorG5" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorH5" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorA5" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorB5" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorC5" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorD5" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorE5" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorF5" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorG5" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorH5" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
 
-    <Circle fx:id="indicatorA6" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorB6" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorC6" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorD6" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorE6" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorF6" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorG6" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorH6" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorA6" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorB6" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorC6" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorD6" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorE6" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorF6" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorG6" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorH6" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
 
-    <Circle fx:id="indicatorA7" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorB7" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorC7" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorD7" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorE7" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorF7" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorG7" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorH7" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorA7" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorB7" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorC7" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorD7" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorE7" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorF7" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorG7" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorH7" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
 
-    <Circle fx:id="indicatorA8" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorB8" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorC8" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorD8" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorE8" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorF8" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorG8" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
-    <Circle fx:id="indicatorH8" fill="KHAKI" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorA8" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorB8" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorC8" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorD8" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorE8" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorF8" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorG8" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Circle fx:id="indicatorH8" fill="CRIMSON" onMouseClicked="#handleIndicatorClick" radius="7.50" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="1" GridPane.rowIndex="0" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="1" GridPane.rowIndex="1" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="1" GridPane.rowIndex="2" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="1" GridPane.rowIndex="3" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="1" GridPane.rowIndex="4" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="1" GridPane.rowIndex="5" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="1" GridPane.rowIndex="6" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="1" GridPane.rowIndex="7" viewOrder="10" disable="true" />
+
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="0" GridPane.rowIndex="1" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="0" GridPane.rowIndex="0" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="0" GridPane.rowIndex="3" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="0" GridPane.rowIndex="2" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="0" GridPane.rowIndex="5" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="0" GridPane.rowIndex="4" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="0" GridPane.rowIndex="7" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="0" GridPane.rowIndex="6" viewOrder="10" disable="true" />
+
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="3" GridPane.rowIndex="0" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="3" GridPane.rowIndex="1" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="3" GridPane.rowIndex="2" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="3" GridPane.rowIndex="3" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="3" GridPane.rowIndex="4" viewOrder="10" disable="true"  />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="3" GridPane.rowIndex="5" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="3" GridPane.rowIndex="6" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="3" GridPane.rowIndex="7" viewOrder="10" disable="true" />
+
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="2" GridPane.rowIndex="1" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="2" GridPane.rowIndex="0" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="2" GridPane.rowIndex="3" viewOrder="10" disable="true"  />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="2" GridPane.rowIndex="2" viewOrder="10" disable="true"  />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="2" GridPane.rowIndex="5" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="2" GridPane.rowIndex="4" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="2" GridPane.rowIndex="7" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="2" GridPane.rowIndex="6" viewOrder="10" disable="true" />
+
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="5" GridPane.rowIndex="0" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="5" GridPane.rowIndex="1" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="5" GridPane.rowIndex="2" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="5" GridPane.rowIndex="3" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="5" GridPane.rowIndex="4" viewOrder="10" disable="true"  />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="5" GridPane.rowIndex="5" viewOrder="10" disable="true"  />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="5" GridPane.rowIndex="6" viewOrder="10" disable="true"  />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="5" GridPane.rowIndex="7" viewOrder="10" disable="true" />
+
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="4" GridPane.rowIndex="1" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="4" GridPane.rowIndex="0" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="4" GridPane.rowIndex="3" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="4" GridPane.rowIndex="2" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="4" GridPane.rowIndex="5" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="4" GridPane.rowIndex="4" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="4" GridPane.rowIndex="7" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="4" GridPane.rowIndex="6" viewOrder="10" disable="true" />
+
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="7" GridPane.rowIndex="0" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="7" GridPane.rowIndex="1" viewOrder="10" disable="true"  />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="7" GridPane.rowIndex="2" viewOrder="10" disable="true"  />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="7" GridPane.rowIndex="3" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="7" GridPane.rowIndex="4" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="7" GridPane.rowIndex="5" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="7" GridPane.rowIndex="6" viewOrder="10" disable="true"  />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="7" GridPane.rowIndex="7" viewOrder="10" disable="true"  />
+
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="6" GridPane.rowIndex="1" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="6" GridPane.rowIndex="0" viewOrder="10" disable="true"  />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="6" GridPane.rowIndex="3" viewOrder="10" disable="true"  />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="6" GridPane.rowIndex="2" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="6" GridPane.rowIndex="5" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="6" GridPane.rowIndex="4" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ANTIQUEWHITE;" GridPane.columnIndex="6" GridPane.rowIndex="7" viewOrder="10" disable="true" />
+    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DIMGRAY;" GridPane.columnIndex="6" GridPane.rowIndex="6" viewOrder="10" disable="true" />
+
+
+
 
   </children>
 </GridPane>
